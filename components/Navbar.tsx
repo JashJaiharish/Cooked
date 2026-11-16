@@ -129,7 +129,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
 
             {/* Resume Action Pill with Rolling Text & Diagonal Arrow */}
             <a
-              href="/resume/Jaiharish_D_Resume.pdf"
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume/Jaiharish_D_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               data-magnetic
@@ -203,7 +203,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
             ))}
 
             <a
-              href="/resume/Jaiharish_D_Resume.pdf"
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume/Jaiharish_D_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

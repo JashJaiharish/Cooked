@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon/favicon.ico", sizes: "any" },
-      { url: "/favicon/icon.png", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/Cooked/favicon/favicon.ico", sizes: "any" },
+      { url: "/Cooked/favicon/icon.png", type: "image/png" },
+      { url: "/Cooked/favicon.ico", sizes: "any" },
     ],
     apple: [
-      { url: "/favicon/apple-touch-icon.png" },
-      { url: "/apple-touch-icon.png" },
+      { url: "/Cooked/favicon/apple-touch-icon.png" },
+      { url: "/Cooked/apple-touch-icon.png" },
     ],
   },
 };
@@ -53,9 +53,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon/icon.png?v=3" type="image/png" />
-        <link rel="shortcut icon" href="/favicon/icon.png?v=3" type="image/png" />
-        <link rel="apple-touch-icon" href="/favicon/icon.png?v=3" />
+        <link rel="icon" href="/Cooked/favicon/icon.png?v=4" type="image/png" />
+        <link rel="shortcut icon" href="/Cooked/favicon/icon.png?v=4" type="image/png" />
+        <link rel="apple-touch-icon" href="/Cooked/favicon/icon.png?v=4" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

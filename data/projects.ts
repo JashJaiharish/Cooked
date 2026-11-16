@@ -182,7 +182,7 @@ export const PERSONAL_DETAILS = {
   githubUsername: "JaiharishD",
   linkedin: "https://linkedin.com/in/jaiharish-d-a4967932a",
   linkedinUsername: "jaiharish-d-a4967932a",
-  resumePath: "/resume/Jaiharish_D_Resume.pdf",
+  resumePath: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume/Jaiharish_D_Resume.pdf`,
   achievement: {
     title: "SIH 2026 — Internal Winner",
     description: "Won internal institutional rounds of Smart India Hackathon 2026 for high-impact engineering innovation.",
