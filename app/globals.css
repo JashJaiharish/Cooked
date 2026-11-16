@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-craft: #F5F2EB;
+  --bg-oatmeal: #EAE4D7;
+  --bg-sheet: #FAF8F3;
+  --text-pencil: #1D1C1A;
+  --text-muted: #78736A;
+  --accent-red: #D94534;
+  --font-handwriting: 'Caveat', cursive;
+  --font-display: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #F5F2EB;
+  color: #1D1C1A;
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: #F5F2EB;
+  color: #1D1C1A;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Authentic Warm Craft Paper Grain Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Colored Pencil Red Selection */
+::selection {
+  background: #D94534;
+  color: #FAF8F3;
+}
+
+/* Custom Desktop Cursor */
+@media (hover: hover) and (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+
+  input, textarea, select, [contenteditable="true"] {
+    cursor: auto !important;
+  }
+}
+
+/* Minimal Oatmeal Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F2EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D0C2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D94534;
+}
+
+/* Hand-drawn scribble / sketch helpers */
+.handwritten {
+  font-family: var(--font-handwriting);
+}
+
+.pencil-circle {
+  border: 1.5px solid #D94534;
+  border-radius: 9999px;
+  padding: 0.1em 0.4em;
+  display: inline-block;
+  transform: rotate(-1.5deg);
+}
+
+.pencil-underline {
+  text-decoration: underline;
+  text-decoration-color: #D94534;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
